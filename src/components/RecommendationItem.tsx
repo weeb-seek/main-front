@@ -1,14 +1,21 @@
-type RecommendationItem = {
-    imageSrc: string,
+type RecommendationItemProps = {
     title: string,
     description: string,
+    imageSrc: string,
     score: number
 }
 
-function RecommendationItem() {
+function RecommendationItem({ title, description, imageSrc, score }: RecommendationItemProps) {
     return (
         <>
-            ...
+            <div>
+                <span>{title}</span>
+                <img src={imageSrc} alt={title}/>
+                <span>Score: {score}</span>
+            </div>
+            <div>
+                {description}
+            </div>
         </>
     )
 }
