@@ -1,7 +1,9 @@
+import SearchBar from "./components/SearchBar.tsx";
+
 function App() {
   return (
     <>
-      <span>INITIAL</span>
+        <SearchBar />
     </>
   )
 }

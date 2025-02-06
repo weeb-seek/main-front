@@ -1,1 +1,31 @@
-@import "tailwindcss";
+body {
+    background-color: rgb(17 24 39);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar {
+    width: 100rem;
+    margin: 10px;
+}
+
+.search-bar > input {
+    color: rgba(255, 174, 0, 0.84);
+    font-size: 2rem;
+    height: 70px;
+    width: 100%;
+    background: rgb(49, 63, 96);
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.search-bar > input::placeholder {
+    font-size: 1.7rem;
+}
