@@ -1,38 +1,44 @@
-body2 {
-    background-color: rgb(17 24 39);
+html, body {
     margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(17 24 39);
 }
 
 .container {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100rem;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .search-bar {
-    width: 100rem;
-    margin: 10px;
+    width: 100%;
 }
 
 .search-bar > input {
+    padding: 0;
     color: rgba(255, 174, 0, 0.84);
     font-size: 2rem;
-    height: 70px;
+    min-height: 70px;
     width: 100%;
     background: rgb(49, 63, 96);
     outline: none;
     border: 0;
-    border-radius: 5px;
     text-align: center;
 }
 
 .search-bar > input::placeholder {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 .recommendation-item {
-    height: 320px;
-    width: auto;
     position: relative;
 }
 
@@ -46,10 +52,11 @@ body2 {
 }
 
 .recommendation-item > img {
-    height: 100%;
+    display: flex;
     width: 100%;
-    display: block;
+    height: auto;
 }
+
 .recommendation-item > h1 {
     position: absolute;
     top: 80%;
@@ -61,19 +68,33 @@ body2 {
     position: absolute;
     bottom: 0;
     right: 0;
-    gap: 10px;
+    gap: 5px;
     margin: 10px;
 }
 
 .recommendation-item .info-title {
     display: flex;
-    font-size: 1rem;
+    margin-top: auto;
+    overflow-wrap: anywhere;
+    hyphens: auto;
+    font-size: .7rem;
     color: aliceblue;
 }
 
 .recommendation-item .info-score {
     display: flex;
     margin-top: auto;
+    padding: 0;
     color: aliceblue;
-    font-size: 1.7rem;
+    font-size: 1rem;
+}
+
+.recommendation-container {
+    display: grid;
+    width: 100%;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    @media (min-width: 1080px) {
+        grid-template-columns: repeat(6, minmax(180px, 1fr));
+    }
 }
