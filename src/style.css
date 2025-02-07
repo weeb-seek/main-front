@@ -1,4 +1,4 @@
-body {
+body2 {
     background-color: rgb(17 24 39);
     margin: 0;
 }
@@ -27,5 +27,53 @@ body {
 }
 
 .search-bar > input::placeholder {
+    font-size: 1.7rem;
+}
+
+.recommendation-item {
+    height: 320px;
+    width: auto;
+    position: relative;
+}
+
+.recommendation-item .gradient {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, black, transparent);
+    top: 0;
+    left: 0;
+}
+
+.recommendation-item > img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.recommendation-item > h1 {
+    position: absolute;
+    top: 80%;
+}
+
+.recommendation-item > .info {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    gap: 10px;
+    margin: 10px;
+}
+
+.recommendation-item .info-title {
+    display: flex;
+    font-size: 1rem;
+    color: aliceblue;
+}
+
+.recommendation-item .info-score {
+    display: flex;
+    margin-top: auto;
+    color: aliceblue;
     font-size: 1.7rem;
 }
