@@ -69,7 +69,7 @@ body {
     bottom: 0;
     right: 0;
     gap: 5px;
-    margin: 10px;
+    width: 100%;
 }
 
 .recommendation-item .info-title {
@@ -77,16 +77,20 @@ body {
     margin-top: auto;
     overflow-wrap: anywhere;
     hyphens: auto;
-    font-size: .7rem;
+    font-size: 1rem;
     color: aliceblue;
+    width: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .recommendation-item .info-score {
     display: flex;
-    margin-top: auto;
     padding: 0;
     color: aliceblue;
-    font-size: 1rem;
+    font-size: 2rem;
+    width: auto;
+    margin: auto 10px 10px auto;
 }
 
 .recommendation-container {
