@@ -1,5 +1,7 @@
 {
-  "name": "main-front",
+  "name": "weeb-seek-main-front",
+  "homepage": "https://weeb-seek.github.io/main-front",
+  "description": "Weeb Seek",
   "private": true,
   "version": "0.0.0",
   "type": "module",
